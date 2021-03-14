@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>GPA/CGPA Calculator</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+
+        <div class="full">
+
+            <div id="head">
+                <h1>GPA-CGPA Calculator</h1>
+            </div>
+
+            <div class="row">
+
+                <div class="col" id="col1"></div>
+
+                <div id="gpa-cal" class="col" id="col2">
+                    <p>Calculate GPA</p>
+                    <div id="subject-no">
+                        <input type="text" placeholder="No. of courses" id="no1">
+                        <button type="submit" id="sub1" onclick="getvalue_gpa()">Submit</button>
+                    </div>
+                </div>
+
+                <div id="cgpa-cal" class="col" id="col3">
+                    <p>Calculate CGPA</p>
+                    <div id="course-no">
+                        <input type="text" placeholder="No. of Semesters" id="no2">
+                        <button type="submit" id="sub2" onclick="getvalue_cgpa()">Submit</button>
+                    </div>
+                </div>
+
+                <div class="col" id="col4"></div>
+
+            </div>
+
+        </div>
+    </body>
+    <script src="calc.js"></script>
+</html>
